@@ -1,0 +1,26 @@
+database:
+    driver: mysql
+    log_level: 4
+    mysql:
+        source: great:great@tcp(127.0.0.1:3306)/great?charset=utf8mb4&parseTime=true&loc=Asia%2fShanghai
+    redis:
+        addr: 127.0.0.1:6379
+        db: 0
+        password: ""
+        read_timeout: 1s
+        user_name: ""
+        write_timeout: 1s
+gin:
+    host: :8080
+    model: debug
+jwt:
+    expiration_seconds: 86400
+    issuer: GuiBao
+    secret_key: yourSecretKey
+log:
+    level: -1
+    log_path: log
+    split_size: 1
+role:
+    default_role: "2000"
+    default_admin_role: "2023"
